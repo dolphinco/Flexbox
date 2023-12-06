@@ -1,21 +1,28 @@
+:root{
+    --primary-white : rgb(243, 243, 236);
+    --primary-purple : rgb(132, 94, 148);
+    --border-radius : 8px;
+}
+
 body{
     margin: 0;
 }
 /**** header inicio****/
+
 .header{
     width: 100%;
     height: 80px;
-    background: #edede9;
+    background: var(--primary-white);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
 .menu ul{
     list-style:none;
     display: flex;
-    gap: 16px;
-    
+    gap: 1rem;
 }
 
 ul li{
@@ -28,7 +35,7 @@ ul li{
 .bannerdesign{
     width: 100%;
     height: 280px;
-    background: #d5bdaf;
+    background: var(--primary-purple);
 }
 /**** banner final****/
 
@@ -51,7 +58,7 @@ ul li{
 }
 
 .tarjetacontenedor{
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     width: 250px;
     
 }
@@ -93,6 +100,7 @@ ul li{
     padding-bottom: 32px;
     
 }
+
 ul{
     list-style:none;
     padding: 0;
